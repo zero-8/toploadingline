@@ -20,7 +20,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script  src="https://code.jquery.com/jquery-3.5.0.js"  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="yt-loader"></div>
 
+	<div class="yt-loader "></div>
+	<br/>
+	<a class="activate">load page</a>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    $(".activate").click(function() {
+
+		        $('.yt-loader').addClass('active');
+
+		        $('.yt-loader').one('yt-loader',function(){
+		       		 $(this).removeClass('active');
+		        });
+
+		    });
+		});
+
+	</script>
 </body>
 </html>
