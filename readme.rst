@@ -68,3 +68,22 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+
+reference: https://www.youtube.com/watch?v=tBYSuc725S0
+
+codeigniter pakagelist 
+
+composer create-project codeigniter/framework
+
+framework rename it to your local server folder.
+
+like 
+
+developer.local.design.com
+
+composer create-project codeigniter/developer.local.design.com
+
+
+make sure to install composer prior. 
+
