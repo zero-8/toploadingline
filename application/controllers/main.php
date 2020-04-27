@@ -22,4 +22,27 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('main');
 	}
+
+	public function test()
+	{
+		 header( "Content-type: text/xml");
+ 
+		 echo "<?xml version='1.0' encoding='UTF-8'?>
+		 <rss version='2.0'>
+		 <channel>
+		 <title>| RSS</title>
+		 <link>/</link>
+		 <description>Cloud RSS</description>
+		 <language>en-us</language>";
+
+		 echo "<item>
+		   <title>Title</title>
+		   <link>Link</link>
+		   <description>description</description>
+		   </item>";
+		 echo "</channel></rss>";
+
+	}
+
+
 }
